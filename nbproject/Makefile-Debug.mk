@@ -39,7 +39,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/Mayor_de_4_numeros.o \
 	${OBJECTDIR}/Procedencia_de_operadores.o \
 	${OBJECTDIR}/Secuencia_fibonacci.o \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/tablas_while_anidado.o
 
 
 # C Compiler Flags
@@ -90,6 +91,11 @@ ${OBJECTDIR}/main.o: main.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
+
+${OBJECTDIR}/tablas_while_anidado.o: tablas_while_anidado.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/tablas_while_anidado.o tablas_while_anidado.c
 
 # Subprojects
 .build-subprojects:

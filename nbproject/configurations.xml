@@ -17,6 +17,7 @@
       <itemPath>Procedencia_de_operadores.c</itemPath>
       <itemPath>Secuencia_fibonacci.c</itemPath>
       <itemPath>main.c</itemPath>
+      <itemPath>tablas_while_anidado.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -50,6 +51,8 @@
       </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="tablas_while_anidado.c" ex="false" tool="0" flavor2="0">
+      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
@@ -80,6 +83,8 @@
       <item path="Secuencia_fibonacci.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="tablas_while_anidado.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
   </confs>

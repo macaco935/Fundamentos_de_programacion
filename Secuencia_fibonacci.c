@@ -27,6 +27,7 @@ int main() {
         n2= n3;
         printf("%d\n",n3);
     }
+    
     //Cristian Martin Ceballos Trejo
     return (0);
 }
