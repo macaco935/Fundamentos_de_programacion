@@ -40,6 +40,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/Procedencia_de_operadores.o \
 	${OBJECTDIR}/Secuencia_fibonacci.o \
 	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/tablas_for.o \
 	${OBJECTDIR}/tablas_while_anidado.o
 
 
@@ -91,6 +92,11 @@ ${OBJECTDIR}/main.o: main.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
+
+${OBJECTDIR}/tablas_for.o: tablas_for.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/tablas_for.o tablas_for.c
 
 ${OBJECTDIR}/tablas_while_anidado.o: tablas_while_anidado.c 
 	${MKDIR} -p ${OBJECTDIR}

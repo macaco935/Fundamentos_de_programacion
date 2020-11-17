@@ -35,12 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Mayor_de_3_numeros.o \
-	${OBJECTDIR}/Mayor_de_4_numeros.o \
-	${OBJECTDIR}/Procedencia_de_operadores.o \
-	${OBJECTDIR}/Secuencia_fibonacci.o \
-	${OBJECTDIR}/main.o \
-	${OBJECTDIR}/tablas_while_anidado.o
+	${OBJECTDIR}/tablas_for.o
 
 
 # C Compiler Flags
@@ -67,35 +62,10 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_de_prgramacion.exe: ${OBJ
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_de_prgramacion ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/Mayor_de_3_numeros.o: Mayor_de_3_numeros.c 
+${OBJECTDIR}/tablas_for.o: tablas_for.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Mayor_de_3_numeros.o Mayor_de_3_numeros.c
-
-${OBJECTDIR}/Mayor_de_4_numeros.o: Mayor_de_4_numeros.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Mayor_de_4_numeros.o Mayor_de_4_numeros.c
-
-${OBJECTDIR}/Procedencia_de_operadores.o: Procedencia_de_operadores.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Procedencia_de_operadores.o Procedencia_de_operadores.c
-
-${OBJECTDIR}/Secuencia_fibonacci.o: Secuencia_fibonacci.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Secuencia_fibonacci.o Secuencia_fibonacci.c
-
-${OBJECTDIR}/main.o: main.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
-
-${OBJECTDIR}/tablas_while_anidado.o: tablas_while_anidado.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/tablas_while_anidado.o tablas_while_anidado.c
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/tablas_for.o tablas_for.c
 
 # Subprojects
 .build-subprojects:

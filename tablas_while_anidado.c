@@ -13,39 +13,27 @@
  */
 int main(int argc, char** argv) {
     
-    int x1,x2,x10,tope,turnos ;
+    int x,y,t,turno ;
      
-     x1=1;
-     x2=2;
-     x10=10;
-     tope=10;
-     turnos=1;
+     x=10;
+     y=10;
+     turno=1;
+     t= 1;
      
-     while(turnos<=tope){
+     while(t<=x){
+         turno= 1;
+         while(turno<=y){
+             printf("%d X %d = %d\n",t,turno,t*turno);
+             turno=turno+1;
          
-        while(turnos<=tope){
-             printf("%d x %d = %d\n",x1,turnos,x1*turnos);
-             turnos= turnos+ 1;
-        }
+         }
+         printf("---------------------------\n");
+         t=t+1;
          
-           turnos=1;
-           printf("\n"); 
-         
-        while(turnos<=tope){
-             printf("%d x %d = %d\n",x2,turnos,x2*turnos);
-             turnos= turnos+ 1;
-        }
-         
-           turnos=1;
-           printf("\n"); 
-         
-        while(turnos<=tope){
-             printf("%d x %d = %d\n",x10,turnos,x10*turnos);
-             turnos=turnos+1;
-        }
+        
       
      }
-   
+ 
    
      
     return (EXIT_SUCCESS);
