@@ -28,7 +28,7 @@ int main() {
       printf("%d\n",arreglo[1]);
       printf("-----------------------------\n");
       
-        for(x=3;x<=99;x=x+1){
+        for(x=2;x<=99;x=x+1){
             
 	    arreglo[x]= n1 + n2;
             n1= n2;
