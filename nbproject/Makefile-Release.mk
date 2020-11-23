@@ -21,7 +21,7 @@ FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=Cygwin-Windows
+CND_PLATFORM=Cygwin_1-Windows
 CND_DLIB_EXT=dll
 CND_CONF=Release
 CND_DISTDIR=dist
@@ -35,10 +35,12 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Funcion_scanf.o \
 	${OBJECTDIR}/Mayor_de_3_numeros.o \
 	${OBJECTDIR}/Mayor_de_4_numeros.o \
 	${OBJECTDIR}/Procedencia_de_operadores.o \
 	${OBJECTDIR}/Secuencia_fibonacci.o \
+	${OBJECTDIR}/arreglo_secuencia_100.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/tablas_for.o \
 	${OBJECTDIR}/tablas_while_anidado.o
@@ -68,6 +70,11 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_de_prgramacion.exe: ${OBJ
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos_de_prgramacion ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+${OBJECTDIR}/Funcion_scanf.o: Funcion_scanf.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Funcion_scanf.o Funcion_scanf.c
+
 ${OBJECTDIR}/Mayor_de_3_numeros.o: Mayor_de_3_numeros.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -87,6 +94,11 @@ ${OBJECTDIR}/Secuencia_fibonacci.o: Secuencia_fibonacci.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Secuencia_fibonacci.o Secuencia_fibonacci.c
+
+${OBJECTDIR}/arreglo_secuencia_100.o: arreglo_secuencia_100.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/arreglo_secuencia_100.o arreglo_secuencia_100.c
 
 ${OBJECTDIR}/main.o: main.c 
 	${MKDIR} -p ${OBJECTDIR}

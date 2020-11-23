@@ -12,10 +12,12 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Funcion_scanf.c</itemPath>
       <itemPath>Mayor_de_3_numeros.c</itemPath>
       <itemPath>Mayor_de_4_numeros.c</itemPath>
       <itemPath>Procedencia_de_operadores.c</itemPath>
       <itemPath>Secuencia_fibonacci.c</itemPath>
+      <itemPath>arreglo_secuencia_100.c</itemPath>
       <itemPath>main.c</itemPath>
       <itemPath>tablas_for.c</itemPath>
       <itemPath>tablas_while_anidado.c</itemPath>
@@ -42,8 +44,6 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="tablas_for.c" ex="false" tool="0" flavor2="0">
-      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
@@ -65,6 +65,8 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Funcion_scanf.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="Mayor_de_3_numeros.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Mayor_de_4_numeros.c" ex="false" tool="0" flavor2="0">
@@ -72,6 +74,8 @@
       <item path="Procedencia_de_operadores.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Secuencia_fibonacci.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="arreglo_secuencia_100.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
       </item>

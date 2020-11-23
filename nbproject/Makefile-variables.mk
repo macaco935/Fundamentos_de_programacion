@@ -7,21 +7,21 @@ CND_BASEDIR=`pwd`
 CND_BUILDDIR=build
 CND_DISTDIR=dist
 # Debug configuration
-CND_PLATFORM_Debug=Cygwin-Windows
-CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin-Windows
+CND_PLATFORM_Debug=Cygwin_1-Windows
+CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin_1-Windows
 CND_ARTIFACT_NAME_Debug=fundamentos_de_prgramacion
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/fundamentos_de_prgramacion
-CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin-Windows/package
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_1-Windows/fundamentos_de_prgramacion
+CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin_1-Windows/package
 CND_PACKAGE_NAME_Debug=fundamentosdeprgramacion.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/fundamentosdeprgramacion.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_1-Windows/package/fundamentosdeprgramacion.tar
 # Release configuration
-CND_PLATFORM_Release=Cygwin-Windows
-CND_ARTIFACT_DIR_Release=dist/Release/Cygwin-Windows
+CND_PLATFORM_Release=Cygwin_1-Windows
+CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_1-Windows
 CND_ARTIFACT_NAME_Release=fundamentos_de_prgramacion
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/fundamentos_de_prgramacion
-CND_PACKAGE_DIR_Release=dist/Release/Cygwin-Windows/package
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_1-Windows/fundamentos_de_prgramacion
+CND_PACKAGE_DIR_Release=dist/Release/Cygwin_1-Windows/package
 CND_PACKAGE_NAME_Release=fundamentosdeprgramacion.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/fundamentosdeprgramacion.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin_1-Windows/package/fundamentosdeprgramacion.tar
 #
 # include compiler specific variables
 #
